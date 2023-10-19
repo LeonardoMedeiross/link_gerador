@@ -19,7 +19,7 @@ color: #ffff;
     height: 712px;
     width: 360px;
     margin: 56px auto 0px;
-    padding: 0px 24px;
+    padding: 0px 24pxgit ;
 
 }
 #profile{
@@ -45,7 +45,9 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: column;
+    padding: 24px 0;
     gap: 16px;
+
 }
 
 ul li a  {
@@ -69,4 +71,26 @@ ul li a  {
 ul li a:hover {
     background: rgba(255, 255, 255, 0.05);
     border: 1.5px white;
+}
+
+#social-link {
+    display: flex;
+    justify-content: center;
+
+    padding: 24px 0;
+    font-size: 24px;
+}
+
+#social-link a {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 16px;
+    transition: all 0.2s;
+    border-radius: 50%;
+}
+
+#social-link a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    
 }
