@@ -19,6 +19,7 @@ color: #ffff;
     height: 712px;
     width: 360px;
     margin: 56px auto 0px;
+    padding: 0px 24px;
 
 }
 #profile{
@@ -42,10 +43,30 @@ color: #ffff;
 
 ul {
     list-style: none;
-
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-ul li {
-    border: solid red 1px;
-    
+ul li a  {
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    padding: 16px 24px;
+    align-items: center;
+    justify-content: center;
+    border: 1px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+    transition: backgroud 0.2s;
+}
+
+
+/*pseudo-selector*/
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px white;
 }
